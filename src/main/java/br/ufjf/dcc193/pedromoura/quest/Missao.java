@@ -1,12 +1,21 @@
 package br.ufjf.dcc193.pedromoura.quest;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
 
 @Component
-@Sco
+@Scope("prototype")
 public class Missao {
+    /**
+     * varre todo o projeto
+     */
     @Autowired
+    /**
+     * Classifica especificamente qual o componente que será chamado
+     */
+    @Qualifier("Clerigo")
     private Heroi heroi;
     public Missao(Heroi heroi){
         System.out.println("O Rei criou uma nova missão!"); 

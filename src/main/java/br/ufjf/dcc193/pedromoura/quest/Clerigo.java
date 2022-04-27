@@ -1,5 +1,8 @@
 package br.ufjf.dcc193.pedromoura.quest;
 
+import org.springframework.stereotype.Component;
+
+@Component("Clerigo")
 public class Clerigo implements Heroi{
 
     public Clerigo(){

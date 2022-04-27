@@ -1,7 +1,10 @@
 package br.ufjf.dcc193.pedromoura.quest;
 
 import org.springframework.stereotype.Component;
-@Component
+/**
+ * é instanciado sem ser 'chamado'
+ */
+@Component("Cavaleiro")
 public class Cavaleiro implements Heroi{
 
     
