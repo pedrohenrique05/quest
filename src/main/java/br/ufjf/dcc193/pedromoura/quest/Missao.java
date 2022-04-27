@@ -2,10 +2,10 @@ package br.ufjf.dcc193.pedromoura.quest;
 
 public class Missao {
 
-    private Cavaleiro cavaleiro;
-    public Missao(Cavaleiro cavaleiro){
+    private Heroi heroi;
+    public Missao(Heroi heroi){
         System.out.println("O Rei criou uma nova missão!"); 
-        setCavaleiro(cavaleiro);
+        setHeroi(heroi);
     }
     public Missao(){
         this(null);
@@ -16,16 +16,16 @@ public class Missao {
     }
 
     public void concluir(){
-        this.cavaleiro.agir();
+        this.heroi.agir();
         System.out.println("A missão chegou ao fim!");
     }
 
-    public Cavaleiro getCavaleiro() {
-        return cavaleiro;
+    public Heroi getHeroi() {
+        return heroi;
     }
 
-    public void setCavaleiro(Cavaleiro cavaleiro) {
-        this.cavaleiro = cavaleiro;
+    public void setHeroi(Heroi Heroi) {
+        this.heroi = Heroi;
     }
     
 }
