@@ -1,7 +1,12 @@
 package br.ufjf.dcc193.pedromoura.quest;
 
-public class Missao {
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 
+@Component
+@Sco
+public class Missao {
+    @Autowired
     private Heroi heroi;
     public Missao(Heroi heroi){
         System.out.println("O Rei criou uma nova missão!"); 
