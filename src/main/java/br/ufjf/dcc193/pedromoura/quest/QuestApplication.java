@@ -15,7 +15,5 @@ public class QuestApplication {
 		m1.iniciar();
 		m1.setHeroi(h1);
 		m1.concluir();
-
 	}
-
 }
